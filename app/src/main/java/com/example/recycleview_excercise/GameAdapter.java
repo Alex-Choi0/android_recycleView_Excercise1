@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -39,6 +40,13 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder
         holder.gameTitleView.setText(gameTitle.get(position));
         holder.gameDetailsView.setText(gameDetails.get(position));
         holder.imageViews.setImageResource(gameImages.get(position));
+
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(context, "You click " + gameTitle.get(position).toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -46,7 +54,7 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder
         return this.gameTitle.size();
     }
 
-    public class GameViewHolder extends RecyclerView.ViewHolder{
+    public static class GameViewHolder extends RecyclerView.ViewHolder{
 
         private TextView gameTitleView, gameDetailsView;
         private ImageView imageViews;
