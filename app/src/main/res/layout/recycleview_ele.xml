@@ -7,6 +7,7 @@
     <!-- 해당 recycleview_ele.xml은 Recycle View에 데이터를 표현하기 위한 템플릿입니다. -->
     <!--  하나의 recycleview_ele.xml은 하나의 데이터를 표현합니다.-->
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +40,7 @@
             <!--            해당 게임 타이틀의 내용을 설명하는 TextView를 배치한다.-->
             <TextView
                 android:id="@+id/gemeDetailsView"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="80dp"
                 android:layout_marginBottom="22dp"
