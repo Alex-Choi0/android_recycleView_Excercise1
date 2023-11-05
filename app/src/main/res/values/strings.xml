@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">RecycleView_Excercise</string>
+    <string-array name="gameTitle">
+        <item>Portal2</item>
+        <item>Barotrauma</item>
+        <item>TitanFall2</item>
+        <item>Home World3</item>
+    </string-array>
+    <string-array name="gameDetails">
+        <item>차원도약 포탈건을 이용하여 퍼즐을 해결하세요</item>
+        <item>목성의 위성 타이탄 심해속에서 펼쳐지는 공포 SF게</item>
+        <item>거대 이족보행 로봇과 함께 전장을 누비세요</item>
+        <item>3D로 구현한 RTS 우주 전략 시물려이션 게임</item>
+    </string-array>
 </resources>
