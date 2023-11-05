@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<!-- 해당 recycleview_ele.xml은 Recycle View에 데이터를 표현하기 위한 템플릿입니다. -->
-<!--  하나의 recycleview_ele.xml은 하나의 데이터를 표현합니다.-->
+    android:layout_height="wrap_content">
+    <!-- 해당 recycleview_ele.xml은 Recycle View에 데이터를 표현하기 위한 템플릿입니다. -->
+    <!--  하나의 recycleview_ele.xml은 하나의 데이터를 표현합니다.-->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-<!--            게임 View를 배치한다. -->
+            <!--            게임 View를 배치한다. -->
             <ImageView
                 android:id="@+id/gameImageView"
                 android:layout_width="70dp"
@@ -25,7 +25,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-<!--            게임 타이틀을 표시하는 TextView를 배치한다.-->
+            <!--            게임 타이틀을 표시하는 TextView를 배치한다.-->
             <TextView
                 android:id="@+id/gameTitleView"
                 android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
                 android:textSize="20dp"
                 app:layout_constraintStart_toEndOf="@+id/gameImageView"
                 app:layout_constraintTop_toTopOf="parent" />
-<!--            해당 게임 타이틀의 내용을 설명하는 TextView를 배치한다.-->
+            <!--            해당 게임 타이틀의 내용을 설명하는 TextView를 배치한다.-->
             <TextView
                 android:id="@+id/gemeDetailsView"
                 android:layout_width="wrap_content"
